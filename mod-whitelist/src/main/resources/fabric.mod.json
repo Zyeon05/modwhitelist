@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "modwhitelist",
+  "version": "${version}",
+  "name": "Mod Whitelist",
+  "description": "Expulse les joueurs ayant des mods non autorisés sur le serveur.",
+  "authors": ["Zyeon"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main":   ["com.zyeon.modwhitelist.ModWhitelist"],
+    "client": ["com.zyeon.modwhitelist.ModWhitelistClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft":    "*",
+    "java":         ">=25",
+    "fabric-api":   "*"
+  }
+}
